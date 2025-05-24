@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <title>Prototipo APP - AgroBaza</title>
+    
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>AgroBaza - Prototipo APP</h1>
+    </header>
+
+    <nav class="actor-navigation">
+        <a href="#admin-vista">Administrador</a>
+        <a href="#empleado-vista">Empleado</a>
+        <a href="#cliente-vista">Cliente</a>
+        <a href="#contable-vista">Contable</a>
+        <a href="#inventario-vista">Resp. Inventario</a>
+        <a href="#sistema-vista">Sistema</a>
+    </nav>
+
+    <main>
+        <section id="admin-vista" class="actor-section">
+            <h2><span class="icon">&#128187;</span> Vista: Administrador</h2>
+            <div class="use-cases-grid">
+                <div class="use-case">
+                    <h3>Administrar Usuarios</h3>
+                    <div class="mockup">
+                        <p>Lista de Usuarios:</p>
+                        <table><thead><tr><th>Nombre</th><th>Rol</th><th>Acción</th></tr></thead><tbody><tr><td>Ana G.</td><td>Empleado</td><td><span class="button-like">Editar</span></td></tr></tbody></table>
+                        <div class="button-like">+ Nuevo Usuario</div>
+                    </div>
+                </div>
+                <div class="use-case">
+                    <h3>Gestionar Proveedores</h3>
+                    <div class="mockup">
+                        <p>Lista de Proveedores:</p>
+                        <table><thead><tr><th>Proveedor</th><th>Contacto</th><th>Acción</th></tr></thead><tbody><tr><td>Agro Suministros</td><td>912345XXX</td><td><span class="button-like">Ver</span></td></tr></tbody></table>
+                        <div class="button-like">+ Nuevo Proveedor</div>
+                    </div>
+                </div>
+                <div class="use-case">
+                    <h3>Gestionar Productos</h3>
+                    <div class="mockup">
+                        <p>Catálogo de Productos:</p>
+                         <table><thead><tr><th>Producto</th><th>Precio</th><th>Stock</th></tr></thead><tbody><tr><td>Semillas Girasol</td><td>15€</td><td>120uds</td></tr></tbody></table>
+                        <div class="button-like">+ Nuevo Producto</div>
+                    </div>
+                </div>
+                <div class="use-case">
+                    <h3>Gestionar Clientes</h3>
+                    <div class="mockup">
+                        <p>Lista de Clientes:</p>
+                        <table><thead><tr><th>Cliente</th><th>Email</th><th>Acción</th></tr></thead><tbody><tr><td>Luis M.</td><td>luis@...</td><td><span class="button-like">Ver Ficha</span></td></tr></tbody></table>
+                        <div class="button-like">+ Nuevo Cliente</div>
+                    </div>
+                </div>
+                <div class="use-case">
+                    <h3>Realizar Pedido (para cliente)</h3>
+                    <div class="mockup">
+                        <div class="input-like">Buscar Cliente...</div>
+                        <p>Seleccionar productos...</p>
+                        <div class="button-like">Confirmar Pedido</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="empleado-vista" class="actor-section">
+            <h2><span class="icon">&#128179;</span> Vista: Empleado (Vendedor)</h2>
+            <div class="use-cases-grid">
+                <div class="use-case">
+                    <h3>Registrar Venta (TPV)</h3>
+                    <div class="mockup">
+                        <p><span class="icon">&#128438;</span> Interfaz TPV:</p>
+                        <div class="input-like">Escanear/Buscar producto...</div>
+                        <p>Total: €0.00</p>
+                        <div class="button-like">Cobrar</div>
+                    </div>
+                </div>
+                <div class="use-case">
+                    <h3>Gestionar Productos (Limitado)</h3>
+                    <div class="mockup">
+                        <p>Ver productos, precios, stock...</p>
+                        <div class="input-like">Buscar producto...</div>
+                        <p><span class="data-item">Semillas Girasol (120 uds)</span></p>
+                    </div>
+                </div>
+                <div class="use-case">
+                    <h3>Gestionar Clientes (Limitado)</h3>
+                    <div class="mockup">
+                        <p>Consultar/Añadir clientes...</p>
+                        <div class="input-like">Buscar cliente...</div>
+                        <div class="button-like">+ Nuevo Cliente (Venta)</div>
+                    </div>
+                </div>
+                <div class="use-case">
+                    <h3>Consultar Stock</h3>
+                    <div class="mockup">
+                        <div class="input-like">ID Producto / Nombre...</div>
+                        <p>Resultado: <span class="data-item">Abono Universal: 50 sacos</span></p>
+                    </div>
+                </div>
+                <div class="use-case">
+                    <h3>Procesar Devoluciones</h3>
+                    <div class="mockup">
+                        <div class="input-like">Nº Pedido / Cliente...</div>
+                        <p>Seleccionar productos a devolver...</p>
+                        <div class="button-like">Confirmar Devolución</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cliente-vista" class="actor-section">
+            <h2><span class="icon">&#128100;</span> Vista: Cliente</h2>
+            <div class="use-cases-grid">
+                <div class="use-case">
+                    <h3>Realizar Pedido</h3>
+                    <div class="mockup">
+                        <p><span class="icon">&#128722;</span> Catálogo de Productos:</p>
+                        <p><span class="data-item">Producto A - €XX <button class="button-like" style="font-size:0.7em; padding:2px 4px;">Añadir</button></span></p>
+                        <p><span class="data-item">Producto B - €YY <button class="button-like" style="font-size:0.7em; padding:2px 4px;">Añadir</button></span></p>
+                        <hr>
+                        <p>Carrito (2 items) - <span class="button-like">Ver Carrito y Pagar</span></p>
+                    </div>
+                </div>
+                <div class="use-case">
+                    <h3>Ver Historial de Compras</h3>
+                    <div class="mockup">
+                        <p><span class="icon">&#128179;</span> Mis Pedidos:</p>
+                        <p><span class="data-item">Pedido #12345 - 15/05/2025 - €75.50 - Enviado</span></p>
+                        <p><span class="data-item">Pedido #12300 - 02/05/2025 - €40.00 - Entregado</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contable-vista" class="actor-section">
+            <h2><span class="icon">&#128179;</span> Vista: Contable</h2>
+            <div class="use-cases-grid">
+                <div class="use-case">
+                    <h3>Emitir Informes</h3>
+                    <div class="mockup">
+                        <div class="form-field">
+                            <label>Tipo de Informe:</label>
+                            <div class="input-like">Ventas Mensuales (seleccionado)</div>
+                        </div>
+                         <div class="form-field">
+                            <label>Periodo:</label>
+                            <div class="input-like">Mayo 2025</div>
+                        </div>
+                        <div class="button-like">Generar Informe</div>
+                    </div>
+                </div>
+                <div class="use-case">
+                    <h3>Consultar Facturas (Generadas)</h3>
+                     <div class="mockup">
+                        <p>Listado de Facturas:</p>
+                        <table><thead><tr><th>Nº Fact.</th><th>Cliente</th><th>Total</th><th>Estado</th></tr></thead><tbody><tr><td>F2025-001</td><td>Luis M.</td><td>€75.50</td><td>Pagada</td></tr></tbody></table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="inventario-vista" class="actor-section">
+            <h2><span class="icon">&#128200;</span> Vista: Responsable de Inventario</h2>
+            <div class="use-cases-grid">
+                <div class="use-case">
+                    <h3>Controlar Caducidad</h3>
+                    <div class="mockup">
+                        <p>Productos Próximos a Caducar:</p>
+                        <p><span class="data-item">Abono Crecimiento Lote #L003 (Cad: 30/06/2025)</span></p>
+                        <div class="button-like">Registrar</div>
+                    </div>
+                </div>
+                <div class="use-case">
+                    <h3>Recibir Nuevos Productos</h3>
+                    <div class="mockup">
+                        <div class="input-like">Nº Pedido Proveedor / Lote...</div>
+                        <p>Verificar cantidades y lotes...</p>
+                        <div class="button-like">Confirmar Recepción</div>
+                    </div>
+                </div>
+                 <div class="use-case">
+                    <h3>Consultar Stock (Avanzado)</h3>
+                    <div class="mockup">
+                        <div class="input-like">ID Producto / Lote...</div>
+                        <p>Resultado: <span class="data-item">Abono Crecimiento Lote #L003: 25 uds</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="sistema-vista" class="actor-section">
+            <h2><span class="icon">&#9881;</span> Procesos del Sistema (Automáticos)</h2>
+            <div class="use-cases-grid">
+                <div class="use-case">
+                    <h3>Notificaciones Stock Bajo</h3>
+                    <div class="mockup">
+                        <p><span class="icon">&#128226;</span> Alerta para Administrador / Resp. Inventario:</p>
+                        <p><span class="data-item">Producto "Semillas Girasol" bajo stock (5 uds restantes).</span></p>
+                        <p><em>(Esta notificación aparecería en el panel del rol correspondiente)</em></p>
+                    </div>
+                </div>
+                <div class="use-case">
+                    <h3>Generar Facturas</h3>
+                    <div class="mockup">
+                        <p><span class="icon">&#128195;</span> Proceso automático tras pedido/venta:</p>
+                        <p><span class="data-item">Factura F2025-002 generada para Pedido #12346.</span></p>
+                        <p><em>(Las facturas generadas son consultadas por el Contable/Admin)</em></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 AgroBaza - Prototipo APP. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
