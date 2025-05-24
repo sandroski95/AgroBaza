@@ -1,0 +1,163 @@
+         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header.main-header {
+            background-color: #2c5e3A; 
+            color: white;
+            padding: 20px 30px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header.main-header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        nav.actor-navigation {
+            background-color: #3a7d4c; 
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav.actor-navigation a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav.actor-navigation a:hover {
+            background-color: #4CAF50; 
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .actor-section {
+            background-color: #ffffff;
+            margin-bottom: 30px;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+        }
+
+        .actor-section h2 {
+            color: #2c5e3A;
+            border-bottom: 2px solid #e8f5e9;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+
+        .use-cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .use-case {
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            border-radius: 6px;
+            background-color: #f9f9f9;
+        }
+
+        .use-case h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #4CAF50;
+            font-size: 1.2em;
+        }
+
+        .mockup {
+            border: 1px dashed #ccc;
+            padding: 10px;
+            font-size: 0.9em;
+            color: #555;
+            background-color: #fff;
+            min-height: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .mockup p, .mockup div, .mockup table { 
+            margin-bottom: 5px; 
+        }
+
+        .mockup button, .mockup .button-like {
+            background-color: #777;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            font-size: 0.8em;
+            border-radius: 3px;
+            cursor: default;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        .mockup .input-like {
+            border: 1px solid #ddd;
+            padding: 4px;
+            background: #fcfcfc;
+            display: inline-block;
+            width: calc(100% - 10px);
+            margin-bottom: 5px;
+        }
+
+         .mockup table { 
+            width: 100%; font-size:0.9em; border-collapse: collapse; 
+        }
+
+         .mockup th, .mockup td { 
+            border: 1px solid #eee; padding: 4px; text-align:left;
+        }
+
+         .mockup th { 
+            background-color: #f0f0f0;
+        }
+
+
+        footer.main-footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #e0e0e0;
+            color: #555;
+            font-size: 0.9em;
+            margin-top: 30px;
+        }
+
+        
+        .mockup .icon { 
+            font-style: italic; color: #4CAF50;
+         }
+
+        .mockup .data-item { 
+            display: block; margin: 2px 0; 
+        }
+
+        .mockup .form-field { 
+            margin-bottom: 5px;
+        }
+
+        .mockup .form-field label { 
+            font-weight: bold; font-size: 0.9em; display: block; margin-bottom:2px;
+        }
+
